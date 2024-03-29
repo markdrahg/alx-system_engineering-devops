@@ -1,4 +1,3 @@
-tes a file in the /tmp
 file { '/tmp/school':
   ensure  => file,
   content => 'I love Puppet',
