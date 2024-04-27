@@ -36,12 +36,12 @@ defaults
 
 frontend markstar-tech-frontend
     bind *:80
-    default_backend clickviral-tech-backend
+    default_backend markstar-tech-backend
 
 backend markstar-tech-backend
     balance roundrobin
-    server 151666-web-01 54.157.133.46:80 check
-    server 151666-web-02 54.158.220.242:80 check
+    server 418795-web-01 54.157.133.46:80 check
+    server 418795-web-02 54.158.220.242:80 check
 "
 
 # shellcheck disable=SC2154
