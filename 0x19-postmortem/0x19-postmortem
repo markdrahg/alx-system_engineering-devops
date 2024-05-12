@@ -1,0 +1,29 @@
+
+stmortem: Service Outage on May 11, 2024
+
+Issue Summary:
+Duration: The outage occurred from 14:00 to 16:30 UTC.
+Impact: The outage affected the availability of our core service, leading to a 30% reduction in user access. Users experienced slow response times and intermittent errors during the outage.
+Root Cause: The outage was caused by a database server failure due to disk I/O saturation.
+Timeline:
+14:00 UTC: Issue detected through monitoring alerts indicating unusually high latency.
+14:05 UTC: Engineering team notified and began investigation, suspecting a potential network issue.
+14:20 UTC: Further investigation revealed disk I/O saturation on the database server as the likely cause.
+14:30 UTC: Misleading investigation paths included exploring network configurations and potential DDoS attacks.
+14:45 UTC: Incident escalated to senior engineering team for additional support.
+15:30 UTC: Database server issue identified and resolved by reallocating I/O-intensive processes and optimizing database queries.
+16:30 UTC: Service fully restored, and latency returned to normal levels.
+Root Cause and Resolution:
+Root Cause: The root cause of the outage was identified as disk I/O saturation on the database server, resulting in degraded performance and service unavailability.
+Resolution: The issue was resolved by reallocating I/O-intensive processes to alternative servers, optimizing database queries to reduce I/O load, and implementing additional monitoring to detect and prevent similar incidents in the future.
+Corrective and Preventative Measures:
+Improvements/Fixes:
+Optimize database indexing and query performance to reduce I/O load.
+Implement automated scaling for database resources to handle sudden spikes in traffic.
+Enhance monitoring alerts for early detection of disk I/O saturation and other performance bottlenecks.
+Tasks to Address the Issue:
+Implement database performance optimizations by end of week (Task assigned to Database Engineering team).
+Configure automated scaling policies for database servers by end of month (Task assigned to DevOps team).
+Enhance monitoring alerts for disk I/O saturation by next release cycle (Task assigned to Monitoring and Alerting team).
+
+
